@@ -39,10 +39,12 @@
     }
 
     .buttons {
-      display: flex;
+      display: inline-flex;
       flex-direction: row;
       justify-content: center;
+      align-items: center;
       margin-top: 20px;
+      position: relative; /* Ensures the buttons start properly placed */
     }
 
     .btn {
@@ -63,7 +65,7 @@
     }
 
     #noButton {
-      position: absolute;
+      position: static; /* Starts in place but moves on hover */
       transition: 0.5s;
     }
   </style>
